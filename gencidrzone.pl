@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-#ident	"@(#)gencidrzone:$Id: gencidrzone.pl,v 1.3 2020/02/21 20:34:09 woods Exp $"
+#ident	"@(#)gencidrzone:$Id: gencidrzone.pl,v 1.4 2020/02/24 00:18:33 woods Exp $"
 
 #	(C)Copyright 1996 Mathias Koerber <mathias@singnet.com.sg>
 #	(C)Copyright 1996-2020 Greg A. Woods <woods@robohack.ca>
@@ -49,6 +49,9 @@
 #	$INCLUDE a.b.c.d0-bits.inc
 #	; ...
 #	$INCLUDE a.b.c.dN-bits.inc
+#
+#	; optionally if this whole zone is a delegated network with a NETNAME
+#	;255	IN	PTR	<NETNAME>-bcast.<providor.domain>. ; RFC 1101 broadcast
 
 
 # This version follows RFC 2317 more closely, with additions for RFC 1101.
